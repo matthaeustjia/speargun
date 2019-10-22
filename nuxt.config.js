@@ -19,6 +19,10 @@ export default {
     ]
   },
   head: {
+    link: [{
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Jomolhari&display=swap'
+    }],
     title: process.env.npm_package_name || '',
     meta: [{
         charset: 'utf-8'

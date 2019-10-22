@@ -60,12 +60,12 @@
         <div class="flex justify-around m-5 text-lg">
           <h1
             :class="{active: currentOption == 'desc'}"
-            class="options"
+            class="options font-medium"
             @click="currentOption = 'desc'"
           >Description</h1>
           <h1
             :class="{active: currentOption == 'features'}"
-            class="options"
+            class="options font-medium"
             @click="currentOption = 'features'"
           >Features</h1>
         </div>
