@@ -56,7 +56,7 @@
           />
         </div>
       </div>
-      <div class="w-full md:w-1/2 p-5">
+      <div class="w-full md:w-1/2 px-5">
         <div class="flex justify-around m-5 text-lg">
           <h1
             :class="{active: currentOption == 'desc'}"
