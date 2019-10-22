@@ -7,7 +7,11 @@
       </div>
     </div>
     <div class="container flex flex-row flex-wrap justify-center">
-      <SpeargunType :speargunType="speargunType" v-for="speargunType in spearGuns" />
+      <SpeargunType
+        :speargunType="speargunType"
+        :key="speargunType.name"
+        v-for="speargunType in spearGuns"
+      />
     </div>
   </div>
 </template>
