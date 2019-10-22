@@ -82,13 +82,7 @@
         </div>
         <div v-else>
           <ul class="text-xs lg:text-sm list-disc">
-            <li>panjang 80cm</li>
-            <li>3 Laminasi kayu, Jati Tua mix dengan kayu ulin dalamnya</li>
-            <li>Shaft 6.3mm stainless s304 / besi baja bintik</li>
-            <li>2 rubber / karet 14mm</li>
-            <li>Mekanis Full Stainless steel</li>
-            <li>Handle di desain sangat nyaman</li>
-            <li>Reverse Mechanism</li>
+            <li v-for="desc in spearGun.desc">{{desc}}</li>
           </ul>
         </div>
       </div>
