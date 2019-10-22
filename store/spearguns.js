@@ -4,6 +4,7 @@ export const state = () => ({
       name: "Euro 80",
       price: "500",
       retailPrice: "899",
+      stock: '1',
       type: "Euro",
       images: ["speargun/1.gif", "speargun/2.gif", "speargun/2.gif"],
       desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank.",
@@ -30,9 +31,9 @@ export const state = () => ({
       name: "Euro 100",
       price: "500",
       retailPrice: "949",
+      stock: '1',
       type: "Euro",
       images: ["speargun/1.gif", "speargun/2.gif", "speargun/2.gif"],
-
       features: {
         length: "100cm  barrel length",
         materials: "3 vertical laminate teak stock",
@@ -49,8 +50,8 @@ export const state = () => ({
       price: "550",
       retailPrice: "999",
       type: "Euro",
+      stock: '0',
       images: ["speargun/1.gif", "speargun/1.gif", "speargun/1.gif", "speargun/2.gif", "speargun/2.gif"],
-
       features: {
         length: "110cm  barrel length",
         materials: "3 vertical laminate teak stock",
@@ -67,8 +68,8 @@ export const state = () => ({
       price: "700",
       retailPrice: "1499",
       type: "Teak",
+      stock: '0',
       images: ["speargun/1.gif", "speargun/2.gif", "speargun/2.gif"],
-
       features: {
         length: "100cm  barrel length",
         materials: "5 vertical laminate highest quality teak stock. The wood will be taken from tree that is at least 40years old.",

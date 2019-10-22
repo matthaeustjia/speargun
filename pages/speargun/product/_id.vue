@@ -27,18 +27,18 @@
     </nav>
     <div class="container flex flex-col md:flex-row justify-around flex-wrap w-full">
       <div class="w-full text-center">
-        <h3 class="text-md tracking-tight font-semibold">Ghost</h3>
+        <h3 class="text-md tracking-tight font-semibold">Bajoo</h3>
         <h1 class="text-2xl font-bold">{{spearGun.name}}</h1>
         <div class="my-5 text-sm flex font-semibold justify-center">
           <div class="mr-5">
             <s class="text-red-600">
               RRP
-              <h1>${{spearGun.retailPrice}}</h1>
+              <h2>${{spearGun.retailPrice}}</h2>
             </s>
           </div>
           <div>
             Our Price
-            <h1>${{spearGun.price}}</h1>
+            <h2>${{spearGun.price}}</h2>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ export default {
   },
   head() {
     return {
-      title: this.spearGun.name,
+      title: this.spearGun.name + " Wooden Speargun",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
