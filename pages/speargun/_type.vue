@@ -3,13 +3,13 @@
     <nav class="container bg-grey-light p-3 rounded font-sans w-full m-4">
       <ol class="list-reset flex text-grey-dark">
         <li>
-          <nuxt-link to="/" class="text-blue font-bold">Home</nuxt-link>
+          <nuxt-link to="/" class="font-bold">Home</nuxt-link>
         </li>
         <li>
           <span class="mx-2">/</span>
         </li>
         <li>
-          <nuxt-link to="/speargun" class="text-blue font-bold">Speargun</nuxt-link>
+          <nuxt-link to="/speargun" class="font-bold">Speargun</nuxt-link>
         </li>
         <li v-if="type">
           <span class="mx-2">/</span>

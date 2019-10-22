@@ -25,7 +25,7 @@
         <div>
           <nuxt-link
             v-on:click.native="toggle"
-            to="/"
+            to="/speargun"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >Spearguns</nuxt-link>
           <nuxt-link
@@ -62,5 +62,8 @@ export default {
 <style scoped>
 nav {
   background: rgba(45, 45, 45, 9);
+}
+.nuxt-link-active {
+  color: rgba(255, 165, 0, 1);
 }
 </style>
