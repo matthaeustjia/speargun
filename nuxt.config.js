@@ -11,6 +11,9 @@ export default {
     routes: [
       'speargun/euro',
       'speargun/teak',
+      'speargun/product/euro_80',
+      'speargun/product/euro_100',
+      'speargun/product/euro_110'
     ]
   },
   head: {
