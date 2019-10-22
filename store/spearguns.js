@@ -73,7 +73,15 @@ export const state = () => ({
       }
     }
   ],
-  type: ["Euro", "Teak"]
+  type: [{
+      name: "Euro",
+      img: "/"
+    },
+    {
+      name: "Teak",
+      img: "/"
+    }
+  ]
 })
 
 export const getters = () => ({
