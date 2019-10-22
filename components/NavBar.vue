@@ -24,17 +24,17 @@
         <div class="lg:flex-grow"></div>
         <div>
           <nuxt-link
-            @click="toggle"
+            v-on:click.native="toggle"
             to="/"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >Spearguns</nuxt-link>
           <nuxt-link
-            @click="toggle"
+            v-on:click.native="toggle"
             to="/contact"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >Contact US</nuxt-link>
           <nuxt-link
-            @click="toggle"
+            v-on:click.native="toggle"
             to="/gallery"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >Gallery</nuxt-link>
