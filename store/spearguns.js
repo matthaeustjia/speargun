@@ -5,6 +5,7 @@ export const state = () => ({
       price: "500",
       retailPrice: "899",
       type: "Euro",
+      images: ["speargun/1.gif", "speargun/2.gif", "speargun/2.gif"],
       desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank.",
         "bla bla bla",
         "bla bla bla",

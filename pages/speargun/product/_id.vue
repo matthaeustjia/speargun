@@ -48,11 +48,11 @@
         </div>
         <div class="w-full flex flex-row flex-wrap">
           <img
-            @click="currentImage = image.src"
-            v-for="image in images"
+            @click="currentIndex = index"
+            v-for="image,index in images"
             :key="image.src"
             class="thumbnail"
-            :src="image.src"
+            :src="getPic(index)"
           />
         </div>
       </div>
@@ -89,12 +89,7 @@ export default {
   data() {
     return {
       currentOption: "desc",
-      currentImage: require("~/assets/img/speargun/1.gif"),
-      images: [
-        { src: require("~/assets/img/speargun/1.gif"), alt: "image1" },
-        { src: require("~/assets/img/speargun/2.gif"), alt: "image1" },
-        { src: require("~/assets/img/speargun/1.gif"), alt: "image1" }
-      ],
+      index: 0,
       id: this.$route.params.id
     };
   },
@@ -118,6 +113,17 @@ export default {
       return this.$store.state.spearguns.all.find(
         speargun => speargun.id === this.id
       );
+    },
+    images() {
+      return this.spearGun.images;
+    },
+    currentImage() {
+      return require("~/assets/img/" + this.images[this.index]);
+    }
+  },
+  methods: {
+    getPic(index) {
+      return require("~/assets/img/" + this.images[index]);
     }
   },
   components: {
