@@ -3,7 +3,7 @@
     <nav class="flex items-center justify-between flex-wrap bg-gray-800 px-6 py-2">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <nuxt-link to="/">
-          <span class="font-semibold text-xl text-bold tracking-widest">Wooden Speargun</span>
+          <span class="font-semibold text-white text-xl text-bold tracking-widest">Wooden Speargun</span>
         </nuxt-link>
       </div>
       <div class="block lg:hidden">
