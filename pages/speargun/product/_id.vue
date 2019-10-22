@@ -89,7 +89,7 @@ export default {
   data() {
     return {
       currentOption: "desc",
-      index: 0,
+      currentIndex: 0,
       id: this.$route.params.id
     };
   },
@@ -118,7 +118,7 @@ export default {
       return this.spearGun.images;
     },
     currentImage() {
-      return require("~/assets/img/" + this.images[this.index]);
+      return require("~/assets/img/" + this.images[this.currentIndex]);
     }
   },
   methods: {
