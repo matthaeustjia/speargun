@@ -22,7 +22,7 @@
       class="uppercase text-5xl tracking-tighter text-black"
     >Our {{spearGuns[0].type}} Range</h1>
     <h1 v-else class="uppercase text-5xl tracking-tighter text-black">All speargun range</h1>
-    <div class="container flex flex-row flex-wrap justify-center">
+    <div class="container flex flex-row flex-wrap">
       <SpeargunList :speargun="speargun" :key="speargun.id" v-for="speargun in spearGuns" />
     </div>
   </div>

@@ -3,7 +3,7 @@
     <nuxt-link :to="'/speargun/product/' + speargun.id">
       <div class="flex flex-col items-center justify-around h-full">
         <img class="h-180" src="~/assets/img/speargun/1.gif" />
-        <div class="flex flex-col items-center">
+        <div class="w-full flex flex-col items-center">
           <span class="uppercase tracking-tight font-medium">{{speargun.name}}</span>
           <s class="text-red-600">
             <span>${{speargun.retailPrice}}</span>
@@ -26,6 +26,6 @@ export default {
   height: 180px;
 }
 .h-320 {
-  height: 260px;
+  height: 320px;
 }
 </style>

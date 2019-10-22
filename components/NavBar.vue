@@ -24,17 +24,17 @@
         <div class="lg:flex-grow"></div>
         <div>
           <nuxt-link
-            @click="open = false"
+            @click="toggle"
             to="/"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >Spearguns</nuxt-link>
           <nuxt-link
-            @click="open = false"
+            @click="toggle"
             to="/contact"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >Contact US</nuxt-link>
           <nuxt-link
-            @click="open = false"
+            @click="toggle"
             to="/gallery"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
           >Gallery</nuxt-link>
@@ -60,4 +60,7 @@ export default {
 </script>
 
 <style scoped>
+nav {
+  background: rgba(45, 45, 45, 9);
+}
 </style>
