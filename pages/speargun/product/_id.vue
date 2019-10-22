@@ -70,19 +70,11 @@
           >Features</h1>
         </div>
         <div v-if="currentOption == 'desc'">
-          <p
-            class="text-xs lg:text-sm"
-          >Adreno Dakota Speargun is an open-muzzle railgun with dual-rubber capabilities and reverse mechanism designed for Australian spearos and diving conditions. CRESSI is the world leader in speargun design and manufacturing techniques. This combined with ADRENO’s Australia custom specification for the Australian market, the result is a game changer.</p>
-          <p
-            class="text-xs lg:text-sm mt-5"
-          >Starting with the new CRESSI designed full stainless-steel Cherokee “reverse trigger mechanism” which increases band stretch and power by 15% over conventional trigger mechanisms. The Mechanism also incorporates Cressi’s lateral guide line release with automatic return, stainless-steel trigger and a Low Profile loading butt. The Cherokee handle is also designed to be extremely supportive at full reach locking your wrist in the correct position when aiming, improving accuracy and controlling recoil.</p>
-          <p
-            class="text-xs lg:text-sm mt-5"
-          >Not all gun muzzles are created equal, there is a lot of debate as to whether the open or closed muzzles are better. CRESSI has silenced the arguments with their new Magnetic double rubber open muzzle which combines the security of a closed muzzle while offering the speed loading, and clear line of site of an open muzzle. The muzzle is also designed to be very low profile when the rubbers are loaded to minimise drag when swinging the gun through the water after that prize fish.</p>
+          <p v-for="desc in spearGun.desc" class="text-xs lg:text-sm mb-5">{{desc}}</p>
         </div>
         <div v-else>
           <ul class="text-xs lg:text-sm list-disc">
-            <li v-for="desc in spearGun.desc">{{desc}}</li>
+            <li v-for="features in spearGun.features">{{features}}</li>
           </ul>
         </div>
       </div>
@@ -115,7 +107,8 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "High quality teak, bajau and ironwood spearguns and spearfishing accessories"
+            "High quality euro wooden speargun. teak wooden speargun" +
+            this.spearGun.name
         }
       ]
     };

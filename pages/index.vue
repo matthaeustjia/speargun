@@ -18,14 +18,14 @@ export default {
   },
   head() {
     return {
-      title: "Wooden Speargun",
+      title: "Bajoo Wooden Speargun",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: "description",
           name: "description",
           content:
-            "High quality teak, bajau and ironwood spearguns and spearfishing accessories"
+            "Bajoo High quality teak, and ironwood spearguns. Best wooden speargun australia"
         }
       ]
     };

@@ -7,6 +7,12 @@ export default {
     port: 8080,
     host: '127.0.0.1'
   },
+  generate: {
+    routes: [
+      'speargun/euro',
+      'speargun/teak',
+    ]
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [{
