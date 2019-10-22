@@ -1,9 +1,9 @@
 export const state = () => ({
   all: [{
-    id: "teak_80",
-    name: "Teak 80",
-    price: "200",
-    retailPrice: "999",
+    id: "euro_80",
+    name: "Euro 80",
+    price: "550",
+    retailPrice: "899",
     type: "Euro",
     desc: {
       length: "80cm barrel length",
@@ -15,11 +15,10 @@ export const state = () => ({
 
     }
   }, {
-    id: "teak_100",
-    name: "Teak 100",
-    price: "350",
-    retailPrice: "999",
-    shaftSize: "6-7mm",
+    id: "euro_100",
+    name: "Euro 100",
+    price: "580",
+    retailPrice: "949",
     type: "Euro",
     desc: {
       length: "100cm  barrel length",
@@ -31,11 +30,10 @@ export const state = () => ({
 
     }
   }, {
-    id: "teak_110",
-    name: "Teak 110",
-    price: "450",
+    id: "euro_110",
+    name: "Euro 110",
+    price: "600",
     retailPrice: "999",
-    shaftSize: "6-7mm",
     type: "Euro",
     desc: {
       length: "110cm  barrel length",
@@ -47,23 +45,22 @@ export const state = () => ({
 
     }
   }, {
-    id: "mahogany_100",
-    name: "Mahogany 100",
-    price: "200",
-    retailPrice: "999",
-    shaftSize: "6-7mm",
-    type: "Mahogany",
+    id: "teak_100",
+    name: "Teak 100",
+    price: "800",
+    retailPrice: "1499",
+    type: "Teak",
     desc: {
-      length: "80cm  barrel length",
-      materials: "3 vertical laminate teak stock",
-      shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
+      length: "100cm  barrel length",
+      materials: "5 vertical laminate highest quality teak stock. The wood will be taken from tree that is at least 40years old.",
+      shaftSize: "Comes with rob allen 7.5mm shaft. Accepting up to (8mm) diameter spearshaft.",
       rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
       trigger: "Reverse Mechanism w/ Stainless Steel",
       handle: "Comfortable and ergonomic handle"
 
     }
   }],
-  type: ["Euro", "Mahogany", "Annihilator"]
+  type: ["Euro", "Teak"]
 })
 
 export const getters = () => ({
