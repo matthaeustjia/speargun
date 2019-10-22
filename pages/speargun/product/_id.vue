@@ -28,8 +28,8 @@
     <div class="container flex flex-col md:flex-row justify-around flex-wrap w-full">
       <div class="w-full text-center">
         <h3 class="text-md tracking-tight font-semibold">Ghost</h3>
-        <h1 class="text-3xl font-bold">{{spearGun.name}}</h1>
-        <div class="flex font-semibold justify-center">
+        <h1 class="text-2xl font-bold">{{spearGun.name}}</h1>
+        <div class="my-5 text-sm flex font-semibold justify-center">
           <div class="mr-5">
             <s class="text-red-600">
               RRP

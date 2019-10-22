@@ -17,11 +17,10 @@
         <li v-if="type">{{spearGuns[0].type}}</li>
       </ol>
     </nav>
-    <h1
-      v-if="type"
-      class="uppercase text-5xl tracking-tighter text-black"
-    >Our {{spearGuns[0].type}} Range</h1>
-    <h1 v-else class="uppercase text-5xl tracking-tighter text-black">All speargun range</h1>
+    <div class="uppercase text-2xl md:text-4xl tracking-tighter text-black">
+      <h1 v-if="type">Our {{spearGuns[0].type}} Range</h1>
+      <h1 v-else>All speargun range</h1>
+    </div>
     <div class="container flex flex-row flex-wrap">
       <SpeargunList :speargun="speargun" :key="speargun.id" v-for="speargun in spearGuns" />
     </div>
