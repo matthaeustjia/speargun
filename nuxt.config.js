@@ -24,6 +24,9 @@ export default {
       href: 'https://fonts.googleapis.com/css?family=Jomolhari&display=swap'
     }],
     title: process.env.npm_package_name || '',
+    script: [{
+      src: "https://www.paypal.com/sdk/js?client-id=sb"
+    }],
     meta: [{
         charset: 'utf-8'
       },

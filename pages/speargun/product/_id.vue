@@ -55,6 +55,11 @@
             :src="getPic(index)"
           />
         </div>
+        <div class="flex justify-center">
+          <button
+            class="bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded"
+          >Add to cart</button>
+        </div>
       </div>
       <div class="w-full md:w-1/2 px-5">
         <div class="flex justify-around m-5 text-lg">
@@ -83,8 +88,7 @@
 </template>
 
 <script>
-import SpeargunList from "~/components/SpeargunList.vue";
-
+import Paypal from "~/components/Paypal.vue";
 export default {
   data() {
     return {
@@ -126,9 +130,7 @@ export default {
       return require("~/assets/img/" + this.images[index]);
     }
   },
-  components: {
-    SpeargunList
-  }
+  components: { Paypal }
 };
 </script>
 
