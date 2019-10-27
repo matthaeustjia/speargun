@@ -55,11 +55,6 @@
             :src="getPic(index)"
           />
         </div>
-        <div class="flex justify-center">
-          <button
-            class="bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded"
-          >Add to cart</button>
-        </div>
       </div>
       <div class="w-full md:w-1/2 px-5">
         <div class="flex justify-around m-5 text-lg">
@@ -82,6 +77,12 @@
             <li v-for="features in spearGun.features">{{features}}</li>
           </ul>
         </div>
+      </div>
+      <div class="container flex justify-center">
+        <button
+          @click="addToCart(spearGun)"
+          class="w-full bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded"
+        >Add to cart</button>
       </div>
     </div>
   </div>
@@ -128,6 +129,9 @@ export default {
   methods: {
     getPic(index) {
       return require("~/assets/img/" + this.images[index]);
+    },
+    addToCart(product) {
+      this.$store.commit("cart/pushProductToCart", product);
     }
   },
   components: { Paypal }

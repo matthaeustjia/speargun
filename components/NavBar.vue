@@ -38,6 +38,11 @@
             to="/gallery"
             class="block mt-4 lg:inline-block lg:mt-0 mr-4"
           >Gallery</nuxt-link>
+          <nuxt-link
+            v-on:click.native="toggle"
+            to="/cart"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-4"
+          >Cart</nuxt-link>
         </div>
       </div>
     </nav>
