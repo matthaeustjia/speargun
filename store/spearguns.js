@@ -22,8 +22,8 @@ export const state = () => ({
         shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
         rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
         trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
-        handle: "Comfortable and ergonomic handle"
-
+        handle: "Comfortable and ergonomic handle",
+        design: "Cuttlefish design for easy manouvering underwater."
       }
     },
     {
@@ -85,7 +85,7 @@ export const state = () => ({
       retailPrice: "1499",
       type: "Bluewater",
       stock: '0',
-      images: ["/img/speargun/1.gif", "/img/speargun/2.gif", "/img/speargun/2.gif"],
+      images: ["/img/speargun/BWE/1.gif", "/img/speargun/BWE/2.gif", "/img/speargun/BWE/3.gif"],
       features: {
         length: "100cm  barrel length",
         materials: "5 vertical laminate highest quality teak stock. The wood will be taken from tree that is at least 40years old.",
@@ -102,7 +102,7 @@ export const state = () => ({
       retailPrice: "1499",
       type: "Bluewater",
       stock: '0',
-      images: ["/img/speargun/1.gif", "/img/speargun/2.gif", "/img/speargun/2.gif"],
+      images: ["/img/speargun/BWE/2.gif", "/img/speargun/BWE/1.gif", "/img/speargun/BWE/3.gif"],
       features: {
         length: "100cm  barrel length",
         materials: "5 vertical laminate highest quality teak stock. The wood will be taken from tree that is at least 40years old.",
