@@ -6,7 +6,7 @@
         <h1 class="w-full text-xl md:text-3xl text-white uppercase">Bajoo Wooden Speargun</h1>
       </div>
     </div>
-    <div class="container flex flex-row flex-wrap justify-center">
+    <div class="container flex flex-row flex-wrap">
       <SpeargunType
         :speargunType="speargunType"
         :key="speargunType.name"
