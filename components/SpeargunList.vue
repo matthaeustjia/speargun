@@ -2,7 +2,7 @@
   <div class="h-320 p-5 w-full sm:w-1/2 lg:w-1/3">
     <nuxt-link :to="'/speargun/product/' + speargun.id">
       <div class="flex flex-col items-center justify-around h-full">
-        <img class="h-180" src="~/assets/img/speargun/1.gif" />
+        <img class="h-180" :src="speargun.images[0]" />
         <div class="w-full flex flex-col items-center">
           <span class="uppercase tracking-tight font-medium">{{speargun.name}}</span>
           <div v-if="speargun.stock > 0">

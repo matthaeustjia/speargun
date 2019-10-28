@@ -33,7 +33,7 @@ export const state = () => ({
       retailPrice: "949",
       stock: '1',
       type: "Euro",
-      images: ["/img/speargun/1.gif", "/img/speargun/2.gif", "/img/speargun/2.gif"],
+      images: ["/img/speargun/2.gif", "/img/speargun/1.gif", "/img/speargun/2.gif"],
       features: {
         length: "100cm  barrel length",
         materials: "3 vertical laminate teak stock",
@@ -116,13 +116,13 @@ export const state = () => ({
   ],
   type: [{
     name: "Euro",
-    img: "/"
+    img: "/img/speargun/1.gif"
   }, {
     name: "Teak",
-    img: "/"
+    img: "/img/speargun/2.gif"
   }, {
     name: "Bluewater",
-    img: "/"
+    img: "/img/speargun/1.gif"
   }]
 })
 
