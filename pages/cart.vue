@@ -4,7 +4,7 @@
     <div class="mx-2 md:m-0" v-for="cart, index in cartList">
       <div class="flex flex-row flex-wrap justify-between">
         <div class="w-2/5">
-          <img class="w-full" :src="require('~/assets/img/'+cart.images[0])" alt />
+          <img class="w-full" :src="cart.images[0]" alt />
         </div>
         <div class="flex">
           <div class="flex flex-col w-3/5">
