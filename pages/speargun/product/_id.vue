@@ -44,8 +44,15 @@
       </div>
       <div class="w-full md:w-1/2 p-5">
         <div class="w-full">
-          <img class="main-image h-180 border" :src="currentImage" />
+          <img
+            @click="imageIndex = currentIndex"
+            class="main-image h-180 border"
+            :src="currentImage"
+          />
         </div>
+        <client-only>
+          <VueGallery :images="images" :index="imageIndex" @close="imageIndex = null"></VueGallery>
+        </client-only>
         <div class="w-full flex flex-row flex-wrap">
           <img
             @click="currentIndex = index"
@@ -93,6 +100,7 @@ import Paypal from "~/components/Paypal.vue";
 export default {
   data() {
     return {
+      imageIndex: null,
       currentOption: "desc",
       currentIndex: 0,
       id: this.$route.params.id
@@ -155,17 +163,6 @@ export default {
   cursor: zoom-in;
 }
 
-@media only screen and (min-width: 768px) {
-  .main-image {
-    transform-origin: 65% 75%;
-    transition: transform 1s, filter 0.5s ease-out;
-  }
-
-  /* The Transformation */
-  .main-image:hover {
-    transform: scale(1.75);
-  }
-}
 img {
   object-fit: cover;
   width: 100%;
