@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-center content-center">
     <nav class="container bg-grey-light p-3 rounded font-sans w-full m-4">
-      <ol class="list-reset flex text-grey-dark">
+      <ol class="list-reset flex text-grey-dark text-sm md:text-md">
         <li>
           <nuxt-link to="/" class="font-bold">Home</nuxt-link>
         </li>
