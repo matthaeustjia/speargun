@@ -51,7 +51,7 @@
           />
         </div>
         <client-only>
-          <VueGallery :images="images" :index="imageIndex" @close="imageIndex = null"></VueGallery>
+          <VueGallery :images=" images" :index="imageIndex" @close="imageIndex = null"></VueGallery>
         </client-only>
         <div class="w-full flex flex-row flex-wrap">
           <img
@@ -59,7 +59,7 @@
             v-for="image,index in images"
             :key="image.src"
             class="thumbnail"
-            :src="getPic(index)"
+            :src="image"
           />
         </div>
       </div>
@@ -131,13 +131,10 @@ export default {
       return this.spearGun.images;
     },
     currentImage() {
-      return require("~/assets/img/" + this.images[this.currentIndex]);
+      return this.images[this.currentIndex];
     }
   },
   methods: {
-    getPic(index) {
-      return require("~/assets/img/" + this.images[index]);
-    },
     addToCart(product) {
       this.$store.commit("cart/pushProductToCart", product);
       this.$notify({
