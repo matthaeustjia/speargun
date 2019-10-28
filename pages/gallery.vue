@@ -4,19 +4,14 @@
       <h1 class="tracking-wide text-5xl">GALLERY</h1>
     </div>
     <div>
-      <div
-        class="image w-full"
-        @click="index = imageIndex"
-        :style="{ backgroundImage: 'url(' + currentImage + ')', width: '800px', height: '400px' }"
-      ></div>
-    </div>
-    <div>
-      <gallery :images="images" :index="index" @close="index = null"></gallery>
+      <client-only>
+        <VueGallery :images="images" :index="index" @close="index = null"></VueGallery>
+      </client-only>
       <div
         class="image"
         v-for="(image, imageIndex) in images"
         :key="imageIndex"
-        @click="currentImage = image"
+        @click="index = imageIndex"
         :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
       ></div>
     </div>
@@ -24,12 +19,9 @@
 </template>
 
 <script>
-import VueGallery from "vue-gallery";
-
 export default {
   data: function() {
     return {
-      currentImage: "https://dummyimage.com/800/ffffff/000000",
       images: [
         "https://dummyimage.com/800/ffffff/000000",
         "https://dummyimage.com/1600/ffffff/000000",
@@ -38,10 +30,6 @@ export default {
       ],
       index: null
     };
-  },
-
-  components: {
-    gallery: VueGallery
   }
 };
 </script>

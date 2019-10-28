@@ -77,6 +77,11 @@ export default {
     },
     {
       src: '~/plugins/notifications-client',
+      mode: 'client',
+
+    },
+    {
+      src: '~/plugins/vue-gallery.js',
       mode: 'client'
     }
   ],
