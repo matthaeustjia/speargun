@@ -1,5 +1,6 @@
 <template>
   <div class="mb-5">
+    <notifications position="top center" width="500px" group="foo" />
     <NavBar />
     <nuxt />
   </div>

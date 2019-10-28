@@ -7,6 +7,17 @@ export default {
     port: 8080,
     host: '127.0.0.1'
   },
+  sitemap: {
+    routes: [
+      'speargun/',
+      'speargun/euro',
+      'speargun/teak',
+      'speargun/product/euro_80',
+      'speargun/product/euro_100',
+      'speargun/product/euro_110',
+      'speargun/product/teak_100'
+    ]
+  },
   generate: {
     routes: [
       'speargun/',
@@ -60,13 +71,22 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{
+      src: '~/plugins/notifications-ssr',
+      mode: 'server'
+    },
+    {
+      src: '~/plugins/notifications-client',
+      mode: 'client'
+    }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+
   ],
   /*
    ** Nuxt.js modules

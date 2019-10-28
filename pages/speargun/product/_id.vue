@@ -81,7 +81,7 @@
       <div class="container flex justify-center">
         <button
           @click="addToCart(spearGun)"
-          class="w-full bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded"
+          class="w-full bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4"
         >Add to cart</button>
       </div>
     </div>
@@ -132,6 +132,12 @@ export default {
     },
     addToCart(product) {
       this.$store.commit("cart/pushProductToCart", product);
+      this.$notify({
+        group: "foo",
+        type: "success",
+        title: "Added to cart.",
+        text: product.name + " has been added to cart"
+      });
     }
   },
   components: { Paypal }

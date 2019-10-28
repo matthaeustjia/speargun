@@ -42,7 +42,10 @@
             v-on:click.native="toggle"
             to="/cart"
             class="block mt-4 lg:inline-block lg:mt-0 mr-4"
-          >Cart</nuxt-link>
+          >
+            Cart
+            <sup v-if="totalItems > 0">({{totalItems}})</sup>
+          </nuxt-link>
         </div>
       </div>
     </nav>
@@ -55,6 +58,11 @@ export default {
     return {
       open: false
     };
+  },
+  computed: {
+    totalItems() {
+      return this.$store.getters["cart/totalItemsInCart"];
+    }
   },
   methods: {
     toggle() {

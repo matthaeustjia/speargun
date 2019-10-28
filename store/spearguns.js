@@ -61,8 +61,7 @@ export const state = () => ({
         handle: "Comfortable and ergonomic handle"
 
       }
-    },
-    {
+    }, {
       id: "teak_100",
       name: "Teak 100",
       price: "700",
@@ -79,17 +78,53 @@ export const state = () => ({
         handle: "Comfortable and ergonomic handle"
 
       }
+    }, {
+      id: "bluewater_140",
+      name: "Bluewater 140",
+      price: "700",
+      retailPrice: "1499",
+      type: "Bluewater",
+      stock: '0',
+      images: ["speargun/1.gif", "speargun/2.gif", "speargun/2.gif"],
+      features: {
+        length: "100cm  barrel length",
+        materials: "5 vertical laminate highest quality teak stock. The wood will be taken from tree that is at least 40years old.",
+        shaftSize: "Comes with rob allen 7.5mm shaft. Accepting up to (8mm) diameter spearshaft.",
+        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
+        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
+        handle: "Comfortable and ergonomic handle"
+
+      }
+    },
+    {
+      id: "bluewater_160",
+      name: "Bluewater 160",
+      price: "700",
+      retailPrice: "1499",
+      type: "Bluewater",
+      stock: '0',
+      images: ["speargun/1.gif", "speargun/2.gif", "speargun/2.gif"],
+      features: {
+        length: "100cm  barrel length",
+        materials: "5 vertical laminate highest quality teak stock. The wood will be taken from tree that is at least 40years old.",
+        shaftSize: "Comes with rob allen 7.5mm shaft. Accepting up to (8mm) diameter spearshaft.",
+        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
+        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
+        handle: "Comfortable and ergonomic handle"
+
+      }
     }
   ],
   type: [{
-      name: "Euro",
-      img: "/"
-    },
-    {
-      name: "Teak",
-      img: "/"
-    }
-  ]
+    name: "Euro",
+    img: "/"
+  }, {
+    name: "Teak",
+    img: "/"
+  }, {
+    name: "Bluewater",
+    img: "/"
+  }]
 })
 
 export const getters = () => ({
