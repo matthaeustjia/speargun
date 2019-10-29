@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center">
-    <div>
-      <h1 class="tracking-wide text-5xl">GALLERY</h1>
+    <div class="uppercase text-2xl md:text-4xl tracking-tighter text-black mb-5">
+      <h1>GALLERY</h1>
     </div>
     <div>
       <client-only>

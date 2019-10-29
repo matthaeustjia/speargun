@@ -7,8 +7,24 @@
 <script>
 export default {
   mounted() {
-    paypal.Buttons().render("#paypal-button-container");
-  }
+    paypal
+      .Buttons({
+        createOrder: function(data, actions) {
+          // Set up the transaction
+          return actions.order.create({
+            purchase_units: [
+              {
+                amount: {
+                  value: this.grandTotal
+                }
+              }
+            ]
+          });
+        }
+      })
+      .render("#paypal-button-container");
+  },
+  props: ["grandTotal"]
 };
 </script>
 <style lang="scss" scoped>

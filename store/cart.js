@@ -5,6 +5,14 @@ export const state = () => ({
 export const getters = {
   totalItemsInCart(state) {
     return state.cartList.length;
+  },
+  grandTotal(state) {
+    let grandTotal = 0;
+    for (let i = 0; i < state.cartList.length; i++) {
+      grandTotal =
+        grandTotal + state.cartList[i].price * state.cartList[i].quantity;
+    }
+    return grandTotal;
   }
 }
 export const mutations = {
