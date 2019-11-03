@@ -26,19 +26,47 @@
       </ol>
     </nav>
     <div class="container flex flex-col md:flex-row justify-around flex-wrap w-full">
-      <div class="w-full text-center">
-        <h3 class="text-md tracking-tight font-semibold">Bajoo</h3>
-        <h1 class="text-2xl font-bold">{{spearGun.name}}</h1>
-        <div class="my-5 text-sm flex font-semibold justify-center">
-          <div class="mr-5">
-            <s class="text-red-600">
-              RRP
-              <h2>${{spearGun.retailPrice}}</h2>
-            </s>
-          </div>
-          <div>
+      <div class="w-full md:w-1/2 px-5 mb-5 flex flex-col">
+        <div class="text-2xl text-center flex flex-col font-semibold">
+          <h3 class="text-lg tracking-tight font-semibold">Bajoo</h3>
+          <h1 class="font-bold">{{spearGun.name}}</h1>
+        </div>
+        <div class="flex text-center items-center justify-center mb-5">
+          <s class="text-red-600 mr-5">
+            RRP
+            <h2>${{spearGun.retailPrice}}</h2>
+          </s>
+          <span class="text-blue-800">
             Our Price
             <h2>${{spearGun.price}}</h2>
+          </span>
+        </div>
+        <div class="flex flex-col justify-between">
+          <div class="w-full flex justify-around text-lg">
+            <h1
+              :class="{active: currentOption == 'desc'}"
+              class="options font-medium"
+              @click="currentOption = 'desc'"
+            >Description</h1>
+            <h1
+              :class="{active: currentOption == 'features'}"
+              class="options font-medium"
+              @click="currentOption = 'features'"
+            >Features</h1>
+          </div>
+          <div v-if="currentOption == 'desc'">
+            <p v-for="desc in spearGun.desc" class="text-xs lg:text-sm mb-5">{{desc}}</p>
+          </div>
+          <div v-else>
+            <ul class="text-xs lg:text-sm list-disc">
+              <li v-for="features in spearGun.features">{{features}}</li>
+            </ul>
+          </div>
+          <div class="container flex justify-center">
+            <button
+              @click="addToCart(spearGun)"
+              class="w-full bg-orange-600 hover:bg-orange-800 uppercase text-xl tracking-tightest text-white font-bold py-2 px-2 rounded-sm"
+            >Add to cart</button>
           </div>
         </div>
       </div>
@@ -62,34 +90,6 @@
             :src="image"
           />
         </div>
-      </div>
-      <div class="w-full md:w-1/2 px-5 mb-5">
-        <div class="flex justify-around m-5 text-lg">
-          <h1
-            :class="{active: currentOption == 'desc'}"
-            class="options font-medium"
-            @click="currentOption = 'desc'"
-          >Description</h1>
-          <h1
-            :class="{active: currentOption == 'features'}"
-            class="options font-medium"
-            @click="currentOption = 'features'"
-          >Features</h1>
-        </div>
-        <div v-if="currentOption == 'desc'">
-          <p v-for="desc in spearGun.desc" class="text-xs lg:text-sm mb-5">{{desc}}</p>
-        </div>
-        <div v-else>
-          <ul class="text-xs lg:text-sm list-disc">
-            <li v-for="features in spearGun.features">{{features}}</li>
-          </ul>
-        </div>
-      </div>
-      <div class="container flex justify-center">
-        <button
-          @click="addToCart(spearGun)"
-          class="w-full bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4"
-        >Add to cart</button>
       </div>
     </div>
   </div>
@@ -166,6 +166,8 @@ img {
   cursor: pointer;
 }
 .thumbnail {
+  max-height: 150px;
+  object-fit: contain;
   width: 33%;
   padding: 0.25em;
   margin-left: 0.33%;

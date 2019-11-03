@@ -11,19 +11,19 @@
           </div>
           <div class="flex w-2/3 justify-around">
             <div class="flex flex-col w-1/4">
-              <h1>Product</h1>
+              <h2 class="text-xs">Product</h2>
               <div class="flex">
                 <h1 class="text-xl">{{cart.name}}</h1>
               </div>
             </div>
             <div class="flex flex-col w-1/4">
-              <h1>Price</h1>
+              <h2 class="text-xs">Price</h2>
               <div class="flex">
                 <h1 class="text-xl">${{cart.price}}</h1>
               </div>
             </div>
             <div class="flex flex-col w-1/4">
-              <h1>Quantity</h1>
+              <h2 class="text-xs">Quantity</h2>
               <div>
                 <div class="flex">
                   <button
@@ -40,7 +40,7 @@
               </div>
             </div>
             <div class="flex flex-col w-1/4 text-right">
-              <h1>Total</h1>
+              <h2 class="text-xs">Total</h2>
               <h1 class="text-xl">${{productTotal(index)}}</h1>
             </div>
           </div>

@@ -5,14 +5,15 @@
         <img class="h-180" :src="speargun.images[0]" />
         <div class="w-full flex flex-col items-center">
           <span class="uppercase tracking-tight font-medium">{{speargun.name}}</span>
-          <div v-if="speargun.stock > 0">
+          <div>
             <s class="text-red-600">
               <span>${{speargun.retailPrice}}</span>
             </s>
             <span class="text-gray-700">${{speargun.price}}</span>
           </div>
-          <div v-else>
-            <span class="text-red-600">Out of stock. Please pre-order</span>
+          <div class="flex flex-col items-center" v-if="speargun.stock == 0">
+            <span class="text-red-600">Out of stock.</span>
+            <span class="text-red-600">Please pre-order</span>
           </div>
         </div>
       </div>
