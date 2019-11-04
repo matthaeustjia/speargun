@@ -109,6 +109,21 @@ export default {
       subject: "",
       message: ""
     };
+  },
+  head() {
+    return {
+      title: "Contact US - Bajoo Wooden Speargun",
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "High quality euro wooden speargun. teak wooden speargun" +
+            this.spearGun.name
+        }
+      ]
+    };
   }
 };
 </script>
