@@ -68,7 +68,7 @@ export const state = () => ({
       retailPrice: "1499",
       type: "Teak",
       stock: '0',
-      images: ["/img/speargun/teak/2.jpg", "/img/speargun/teak/1.jpg", "/img/speargun/teak/3.jpg", "/img/speargun/teak/4.jpg", "/img/speargun/teak/5.jpg"],
+      images: ["/img/speargun/teak/2.png", "/img/speargun/teak/1.jpg", "/img/speargun/teak/3.jpg", "/img/speargun/teak/4.jpg", "/img/speargun/teak/5.jpg"],
       desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank.",
         "bla bla bla",
         "bla bla bla",

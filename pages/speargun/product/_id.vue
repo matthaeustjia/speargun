@@ -78,9 +78,7 @@
             :src="currentImage"
           />
         </div>
-        <client-only>
-          <VueGallery :images=" images" :index="imageIndex" @close="imageIndex = null"></VueGallery>
-        </client-only>
+        <VueGallery :images=" images" :index="imageIndex" @close="imageIndex = null"></VueGallery>
         <div class="w-full flex flex-row flex-wrap">
           <img
             @click="currentIndex = index"
