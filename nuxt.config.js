@@ -82,7 +82,6 @@ export default {
     },
     {
       src: '~/plugins/vue-gallery.js',
-      mode: 'client'
     }
   ],
   /*

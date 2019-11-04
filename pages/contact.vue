@@ -1,21 +1,100 @@
 <template>
-  <div class="flex flex-col items-center h-screen w-full bg-blue-600">
+  <div class="flex flex-col items-center h-screen w-full">
     <div class="flex flex-col items-center justify-center content-center">
       <div class="cover-img w-full">
         <img class="cover" src="~/assets/img/cover.jpg" alt="cover" />
         <div
           class="cover-text flex flex-col w-full justify-center text-center items-center tracking-widest"
         >
-          <h1 class="w-full text-xl md:text-3xl text-white uppercase">CONTACT BAJOO</h1>
+          <h1 class="w-full text-xl md:text-3xl text-white uppercase">CONTACT US</h1>
           <h3
             class="w-full text-sm md:text-md text-white"
           >While we're good with smoke signals, there are simpler ways for us to get in touch and answer your questions.</h3>
         </div>
       </div>
     </div>
-    <div class="w-full bg-white rounded shadow-lg p-8 m-4 md:w-2/5 md:mx-auto p-6">
-      <div>Goblok</div>
-      <div>Goblok</div>
+    <div class="container flex flex-wrap bg-white">
+      <div class="w-2/3 flex">
+        <p>
+          Thank you for visiting our website. We'd love to hear your comments, so please take a moment to provide the information below. For further assistance you may also call us at
+          <a
+            href="tel:0421843213"
+          >0421 843 213</a> , Monday through Friday from 8-5 PST and Saturday from 9-3 PST.
+        </p>
+      </div>
+      <div class="w-full flex justify-center">
+        <form class="w-full md:w-2/3 p-5">
+          <div class="w-full flex flex-wrap">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-first-name"
+              >First Name</label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name"
+                type="text"
+                required
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="phone"
+              >Phone</label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="phone"
+                type="number"
+                required
+              />
+            </div>
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="email"
+              >Email</label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="subject"
+              >Subject</label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="subject"
+                type="text"
+                required
+              />
+            </div>
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="message"
+              >Message</label>
+              <textarea
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+              <button
+                class="w-full bg-blue-600 hover:bg-blue-900 uppercase text-xl tracking-tightest text-white font-bold py-2 px-2 rounded-sm"
+              >Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </template>
