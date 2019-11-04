@@ -34,7 +34,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Bajoo speragun provides handmade high quality teak, and ironwood spearguns for sale. Best wooden speargun australia"
+            "Manufacturer handmade high quality wooden spearguns for sale. Best wooden speargun australia"
         }
       ]
     };

@@ -112,9 +112,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content:
-            "High quality euro wooden speargun. teak wooden speargun" +
-            this.spearGun.name
+          content: this.spearGun.desc
         }
       ]
     };

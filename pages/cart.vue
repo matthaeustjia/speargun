@@ -61,6 +61,20 @@
 <script>
 import Paypal from "~/components/Paypal";
 export default {
+  head() {
+    return {
+      title: "Cart",
+      titleTemplate: "%s - Bajoo Wooden Speargun",
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: "description",
+          name: "description",
+          content: "High quality euro wooden speargun. teak wooden speargun"
+        }
+      ]
+    };
+  },
   computed: {
     cartList() {
       return this.$store.state.cart.cartList;

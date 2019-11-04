@@ -20,6 +20,20 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Gallery",
+      titleTemplate: "%s - Bajoo Wooden Speargun",
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: "description",
+          name: "description",
+          content: "Gallery of bajoo wooden speargun"
+        }
+      ]
+    };
+  },
   data: function() {
     return {
       images: [
