@@ -25,6 +25,32 @@ export const state = () => ({
         handle: "Comfortable and ergonomic handle",
         design: "Cuttlefish design for easy manouvering underwater."
       }
+    }, {
+      id: "euro_90",
+      name: "Euro 90",
+      price: "0.1",
+      retailPrice: "899",
+      stock: '1',
+      type: "Euro",
+      images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
+      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank.",
+        "bla bla bla",
+        "bla bla bla",
+        "bla bla bla",
+        "bla bla bla",
+        "bla bla bla",
+        "bla bla bla"
+
+      ],
+      features: {
+        length: "80cm barrel length",
+        materials: "3 vertical laminate teak stock",
+        shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
+        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
+        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
+        handle: "Comfortable and ergonomic handle",
+        design: "Cuttlefish design for easy manouvering underwater."
+      }
     },
     {
       id: "euro_100",

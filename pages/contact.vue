@@ -6,9 +6,9 @@
         <div
           class="cover-text flex flex-col w-full justify-center text-center items-center tracking-widest"
         >
-          <h1 class="w-full text-xl md:text-3xl text-white uppercase">CONTACT US</h1>
+          <h1 class="w-full text-2xl md:text-4xl text-white uppercase">CONTACT US</h1>
           <h3
-            class="w-full text-sm md:text-md text-white"
+            class="w-full text-sm md:text-lg text-white"
           >While we're good with smoke signals, there are simpler ways for us to get in touch and answer your questions.</h3>
         </div>
       </div>
