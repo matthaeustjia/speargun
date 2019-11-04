@@ -7,23 +7,21 @@
           class="cover-text flex flex-col w-full justify-center text-center items-center tracking-widest"
         >
           <h1 class="w-full text-2xl md:text-4xl text-white uppercase">CONTACT US</h1>
-          <h3
-            class="w-full text-sm md:text-lg text-white"
-          >While we're good with smoke signals, there are simpler ways for us to get in touch and answer your questions.</h3>
+          <h3 class="container text-xs md:text-sm text-white">
+            Thank you for visiting our website. We'd love to hear your comments, so please take a moment to provide the information below. For further assistance you may also call us at
+            <a
+              href="tel:0421843213"
+            >0421 843 213</a> , Monday through Friday from 8-5 PST and Saturday from 9-3 PST.
+          </h3>
         </div>
       </div>
     </div>
     <div class="container flex flex-wrap bg-white">
       <div class="w-2/3 flex">
-        <p>
-          Thank you for visiting our website. We'd love to hear your comments, so please take a moment to provide the information below. For further assistance you may also call us at
-          <a
-            href="tel:0421843213"
-          >0421 843 213</a> , Monday through Friday from 8-5 PST and Saturday from 9-3 PST.
-        </p>
+        <p></p>
       </div>
       <div class="w-full flex justify-center">
-        <form class="w-full md:w-2/3 p-5">
+        <form class="w-full md:w-2/3 p-1 md:p-5">
           <div class="w-full flex flex-wrap">
             <div class="w-full px-3">
               <label

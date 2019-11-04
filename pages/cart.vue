@@ -35,7 +35,7 @@
                 </div>
                 <button
                   @click="removeItemFromCart(index)"
-                  class="bg-transparent text-center text-xs"
+                  class="bg-transparent text-red-600 text-center text-xs"
                 >Remove</button>
               </div>
             </div>

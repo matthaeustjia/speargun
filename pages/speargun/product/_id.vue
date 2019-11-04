@@ -42,23 +42,17 @@
           </span>
         </div>
         <div class="flex flex-col justify-between">
-          <div class="w-full flex justify-around text-lg">
-            <h1
-              :class="{active: currentOption == 'desc'}"
-              class="options font-medium"
-              @click="currentOption = 'desc'"
-            >Description</h1>
-            <h1
-              :class="{active: currentOption == 'features'}"
-              class="options font-medium"
-              @click="currentOption = 'features'"
-            >Features</h1>
+          <div class="w-full mb-2 flex justify-around text-lg">
+            <h1 class="options font-medium">Description</h1>
           </div>
-          <div v-if="currentOption == 'desc'">
-            <p v-for="desc in spearGun.desc" class="text-xs lg:text-sm mb-5">{{desc}}</p>
+          <div>
+            <p v-for="desc in spearGun.desc" class="text-xs lg:text-sm mb-2">{{desc}}</p>
           </div>
-          <div v-else>
-            <ul class="text-xs lg:text-sm list-disc">
+          <div>
+            <div class="w-full mb-2 flex justify-around text-lg">
+              <h1 class="options font-medium">Features</h1>
+            </div>
+            <ul class="text-xs lg:text-sm list-disc mb-5">
               <li v-for="features in spearGun.features">{{features}}</li>
             </ul>
           </div>
@@ -99,7 +93,6 @@ export default {
   data() {
     return {
       imageIndex: null,
-      currentOption: "desc",
       currentIndex: 0,
       id: this.$route.params.id
     };
@@ -146,11 +139,9 @@ export default {
 </script>
 
 <style scoped>
-.active {
-  border-bottom: 2px solid;
-}
 .options {
   cursor: pointer;
+  border-bottom: 2px solid;
 }
 .main-image {
   cursor: zoom-in;

@@ -7,18 +7,14 @@ export const state = () => ({
       stock: '1',
       type: "Euro",
       images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
-      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank.",
+      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
+        "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance.",
         "bla bla bla",
-        "bla bla bla",
-        "bla bla bla",
-        "bla bla bla",
-        "bla bla bla",
-        "bla bla bla"
 
       ],
       features: {
         length: "80cm barrel length",
-        materials: "3 vertical laminate teak stock",
+        materials: "7 vertical laminated wood with ironwood as its core with a touch of rosewood and teak.",
         shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
         rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
         trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",

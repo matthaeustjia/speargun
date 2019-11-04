@@ -36,7 +36,7 @@ export default {
     }],
     title: process.env.npm_package_name || '',
     script: [{
-      src: "https://www.paypal.com/sdk/js?client-id=AWviX4RcbT6eXSvyq_tHgXfq7YcfZRgJVyiUj2lBBr1VT9Jj7KJy6fBiGFp5FlPJ4I7yuAxo5fuoVMGf&currency=AUD"
+      src: "https://www.paypal.com/sdk/js?client-id=sb&currency=AUD"
     }],
     meta: [{
         charset: 'utf-8'

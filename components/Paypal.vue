@@ -8,6 +8,7 @@
 export default {
   mounted() {
     let grandTotal = this.grandTotal;
+    let allItems = this.cartList;
     paypal
       .Buttons({
         createOrder: function(data, actions) {
@@ -33,6 +34,9 @@ export default {
       .render("#paypal-button-container");
   },
   computed: {
+    cartList() {
+      return this.$store.state.cart.cartList;
+    },
     grandTotal() {
       return this.$store.getters["cart/grandTotal"];
     }

@@ -18,7 +18,6 @@ export const getters = {
 export const mutations = {
   pushProductToCart(state, product) {
     var index = state.cartList.findIndex(cart => cart.id == product.id)
-    console.log(index);
     if (index === -1) {
       state.cartList.push({
         ...product,
