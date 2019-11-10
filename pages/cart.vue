@@ -13,13 +13,13 @@
             <div class="flex flex-col w-1/4">
               <h2 class="text-xs">Product</h2>
               <div class="flex">
-                <h1 class="text-xl">{{cart.name}}</h1>
+                <h1 class="text-md md:text-xl">{{cart.name}}</h1>
               </div>
             </div>
             <div class="flex flex-col w-1/4">
               <h2 class="text-xs">Price</h2>
               <div class="flex">
-                <h1 class="text-xl">${{cart.price}}</h1>
+                <h1 class="text-md md:text-xl">${{cart.price}}</h1>
               </div>
             </div>
             <div class="flex flex-col w-1/4">
@@ -28,10 +28,13 @@
                 <div class="flex">
                   <button
                     @click="substractQuantity(index)"
-                    class="w-5 border bg-transparent font-bold"
+                    class="w-4 md:w-5 border bg-transparent font-bold"
                   >-</button>
-                  <h3 class="border w-8 text-center">{{cart.quantity}}</h3>
-                  <button @click="addQuantity(index)" class="w-5 border bg-transparent font-bold">+</button>
+                  <h3 class="border w-5 md:w-8 text-center">{{cart.quantity}}</h3>
+                  <button
+                    @click="addQuantity(index)"
+                    class="w-4 md:w-5 border bg-transparent font-bold"
+                  >+</button>
                 </div>
                 <button
                   @click="removeItemFromCart(index)"
@@ -41,20 +44,23 @@
             </div>
             <div class="flex flex-col w-1/4 text-right">
               <h2 class="text-xs">Total</h2>
-              <h1 class="text-xl">${{productTotal(index)}}</h1>
+              <h1 class="text-md md:text-xl">${{productTotal(index)}}</h1>
             </div>
           </div>
         </div>
       </div>
       <div class="flex flex-col w-full text-right font-semibold">
         <h1>Grand Total</h1>
-        <h1 class="text-xl">${{grandTotal}}</h1>
+        <h1 class="text-md md:text-xl">${{grandTotal}}</h1>
       </div>
       <div class="flex justify-center text-center font-semibold">
         <Paypal />
       </div>
     </div>
-    <div v-else>Your shopping cart is empty.</div>
+    <div class="text-xl" v-else>
+      <h1 class="text-3xl">Ooops....</h1>
+      <div>Your shopping cart is empty.</div>
+    </div>
   </div>
 </template>
 

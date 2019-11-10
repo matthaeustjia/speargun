@@ -1,11 +1,48 @@
 export const state = () => ({
   all: [{
-      id: "euro_80",
-      name: "Euro 80",
-      price: "500",
-      retailPrice: "899",
-      stock: '1',
-      type: "Euro",
+      id: "euro",
+      name: "Euro",
+      length: [{
+          name: "Euro 90",
+          id: "euro_90",
+          barrelLength: "90",
+          price: "500",
+          retailPrice: "899",
+          stock: '1',
+        },
+        {
+          id: "euro_100",
+          name: "Euro 100",
+          barrelLength: "100",
+          price: "550",
+          retailPrice: "999",
+          stock: '1',
+        },
+        {
+          id: "euro_110",
+          name: "Euro 110",
+          barrelLength: "110",
+          price: "600",
+          retailPrice: "999",
+          stock: '1'
+        },
+        {
+          id: "euro_120",
+          name: "Euro 120",
+          barrelLength: "120",
+          price: "650",
+          retailPrice: "999",
+          stock: '1'
+        },
+        {
+          id: "euro_140",
+          name: "Euro 140",
+          barrelLength: "140",
+          price: "700",
+          retailPrice: "999",
+          stock: '1'
+        }
+      ],
       images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
       desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
         "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance.",
@@ -13,7 +50,42 @@ export const state = () => ({
 
       ],
       features: {
-        length: "80cm barrel length",
+        materials: "7 vertical laminated wood with ironwood as its core with a touch of rosewood and teak.",
+        shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
+        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
+        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
+        handle: "Comfortable and ergonomic handle",
+        design: "Cuttlefish design for easy manouvering underwater."
+      }
+    },
+    {
+      name: "Bluewater",
+      id: "bluewater",
+      length: [{
+          name: "Bluewater 160",
+          id: "bluewater_160",
+          barrelLength: "160",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+        {
+          id: "bluewater_170",
+          name: "Bluewater 170",
+          barrelLength: "170",
+          price: "900",
+          retailPrice: "2000",
+          stock: '1',
+        },
+
+      ],
+      images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
+      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
+        "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance.",
+        "bla bla bla",
+
+      ],
+      features: {
         materials: "7 vertical laminated wood with ironwood as its core with a touch of rosewood and teak.",
         shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
         rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
@@ -22,25 +94,125 @@ export const state = () => ({
         design: "Cuttlefish design for easy manouvering underwater."
       }
     }, {
-      id: "euro_90",
-      name: "Euro 90",
-      price: "0.1",
-      retailPrice: "899",
-      stock: '1',
-      type: "Euro",
+      name: "Single Roller",
+      id: "singleroller",
+      length: [{
+          name: "Single Roller 90",
+          id: "singleroller_90",
+          barrelLength: "90",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+        {
+          name: "Single Roller 100",
+          id: "singleroller_100",
+          barrelLength: "100",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+        {
+          name: "Single Roller 110",
+          id: "singleroller_110",
+          barrelLength: "110",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+      ],
       images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
-      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank.",
+      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
+        "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance.",
         "bla bla bla",
-        "bla bla bla",
-        "bla bla bla",
-        "bla bla bla",
-        "bla bla bla",
-        "bla bla bla"
 
       ],
       features: {
-        length: "80cm barrel length",
-        materials: "3 vertical laminate teak stock",
+        materials: "7 vertical laminated wood with ironwood as its core with a touch of rosewood and teak.",
+        shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
+        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
+        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
+        handle: "Comfortable and ergonomic handle",
+        design: "Cuttlefish design for easy manouvering underwater."
+      }
+    }, {
+      name: "Double Roller",
+      id: "doubleroller",
+      length: [{
+          name: "Double Roller 90",
+          id: "doubleroller_90",
+          barrelLength: "90",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+        {
+          name: "Double Roller 100",
+          id: "doubleroller_100",
+          barrelLength: "100",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+        {
+          name: "Double Roller 110",
+          id: "doubleroller_110",
+          barrelLength: "110",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+      ],
+      images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
+      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
+        "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance.",
+        "bla bla bla",
+
+      ],
+      features: {
+        materials: "7 vertical laminated wood with ironwood as its core with a touch of rosewood and teak.",
+        shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
+        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
+        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
+        handle: "Comfortable and ergonomic handle",
+        design: "Cuttlefish design for easy manouvering underwater."
+      }
+    }, {
+      name: "Single Roller",
+      id: "singleroller",
+      length: [{
+          name: "Single Roller 90",
+          id: "singleroller_90",
+          barrelLength: "90",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+        {
+          name: "Single Roller 100",
+          id: "singleroller_100",
+          barrelLength: "100",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+        {
+          name: "Single Roller 110",
+          id: "singleroller_110",
+          barrelLength: "110",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+      ],
+      images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
+      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
+        "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance.",
+        "bla bla bla",
+
+      ],
+      features: {
+        materials: "7 vertical laminated wood with ironwood as its core with a touch of rosewood and teak.",
         shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
         rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
         trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
@@ -49,110 +221,69 @@ export const state = () => ({
       }
     },
     {
-      id: "euro_100",
-      name: "Euro 100",
-      price: "500",
-      retailPrice: "949",
-      stock: '1',
-      type: "Euro",
-      images: ["/img/speargun/2.gif", "/img/speargun/1.gif", "/img/speargun/2.gif"],
-      features: {
-        length: "100cm  barrel length",
-        materials: "3 vertical laminate teak stock",
-        shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
-        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
-        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
-        handle: "Comfortable and ergonomic handle"
-
-      }
-    },
-    {
-      id: "euro_110",
-      name: "Euro 110",
-      price: "550",
-      retailPrice: "999",
-      type: "Euro",
-      stock: '0',
-      images: ["/img/speargun/1.gif", "/img/speargun/2.gif", "/img/speargun/2.gif"],
-      features: {
-        length: "110cm  barrel length",
-        materials: "3 vertical laminate teak stock",
-        shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
-        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
-        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
-        handle: "Comfortable and ergonomic handle"
-
-      }
-    }, {
-      id: "teak_100",
-      name: "Teak 100",
-      price: "700",
-      retailPrice: "1499",
-      type: "Teak",
-      stock: '0',
-      images: ["/img/speargun/teak/2.png", "/img/speargun/teak/1.jpg", "/img/speargun/teak/3.jpg", "/img/speargun/teak/4.jpg", "/img/speargun/teak/5.jpg"],
-      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank.",
+      name: "Inverted Roller",
+      id: "invertedroller",
+      length: [{
+          name: "Inverted Roller 90",
+          id: "invertedroller_90",
+          barrelLength: "90",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+        {
+          name: "Inverted Roller 100",
+          id: "invertedroller_100",
+          barrelLength: "100",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+        {
+          name: "Inverted Roller 110",
+          id: "invertedroller_110",
+          barrelLength: "110",
+          price: "800",
+          retailPrice: "1800",
+          stock: '1',
+        },
+      ],
+      images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
+      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
+        "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance.",
         "bla bla bla",
-        "bla bla bla",
-        "bla bla bla",
-        "bla bla bla",
-        "bla bla bla",
-        "bla bla bla"
 
       ],
       features: {
-        length: "100cm  barrel length",
-        materials: "5 vertical laminate highest quality teak stock. The wood will be taken from tree that is at least 40years old.",
-        shaftSize: "Comes with rob allen 7.5mm shaft. Accepting up to (8mm) diameter spearshaft.",
+        materials: "7 vertical laminated wood with ironwood as its core with a touch of rosewood and teak.",
+        shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
         rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
         trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
-        handle: "Comfortable and ergonomic handle"
-
+        handle: "Comfortable and ergonomic handle",
+        design: "Cuttlefish design for easy manouvering underwater."
       }
-    }, {
-      id: "bluewater_140",
-      name: "Bluewater 140",
-      price: "700",
-      retailPrice: "1499",
-      type: "Bluewater",
-      stock: '0',
-      images: ["/img/speargun/BWE/1.gif", "/img/speargun/BWE/2.gif", "/img/speargun/BWE/3.gif"],
-      features: {
-        length: "100cm  barrel length",
-        materials: "5 vertical laminate highest quality teak stock. The wood will be taken from tree that is at least 40years old.",
-        shaftSize: "Comes with rob allen 7.5mm shaft. Accepting up to (8mm) diameter spearshaft.",
-        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
-        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
-        handle: "Comfortable and ergonomic handle"
-
-      }
-    }, {
-      id: "bluewater_160",
-      name: "Bluewater 160",
-      price: "700",
-      retailPrice: "1499",
-      type: "Bluewater",
-      stock: '0',
-      images: ["/img/speargun/BWE/2.gif", "/img/speargun/BWE/1.gif", "/img/speargun/BWE/3.gif"],
-      features: {
-        length: "100cm  barrel length",
-        materials: "5 vertical laminate highest quality teak stock. The wood will be taken from tree that is at least 40years old.",
-        shaftSize: "Comes with rob allen 7.5mm shaft. Accepting up to (8mm) diameter spearshaft.",
-        rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
-        trigger: "Reverse trigger mechanism w/ Stainless Steel for an additional 5cm of band stretch",
-        handle: "Comfortable and ergonomic handle"
-
-      }
-    }
+    },
   ],
   type: [{
     name: "Euro",
+    type: "euro",
     img: "/img/speargun/1.gif"
   }, {
-    name: "Teak",
+    name: "Single Roller",
+    type: "singleroller",
+    img: "/img/speargun/1.gif"
+  }, {
+    name: "Double roller",
+    type: "doubleroller",
+    img: "/img/speargun/1.gif"
+  }, {
+    name: "Inverted Roller",
+    type: "invertedroller",
     img: "/img/speargun/2.gif"
   }, {
     name: "Bluewater",
+    type: "bluewater",
+
     img: "/img/speargun/1.gif"
   }]
 })

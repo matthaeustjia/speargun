@@ -17,18 +17,18 @@
         <li v-if="type">{{spearGuns[0].type}}</li>
       </ol>
     </nav>
-    <div class="uppercase text-2xl md:text-4xl tracking-tighter text-black">
-      <h1 v-if="type">Our {{spearGuns[0].type}} Range</h1>
-      <h1 v-else>All speargun range</h1>
-    </div>
     <div class="container flex flex-row flex-wrap">
-      <SpeargunList :speargun="speargun" :key="speargun.id" v-for="speargun in spearGuns" />
+      <SpeargunType
+        :speargunType="speargunType"
+        :key="speargunType.name"
+        v-for="speargunType in spearGuns"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import SpeargunList from "~/components/SpeargunList.vue";
+import SpeargunType from "~/components/SpeargunType.vue";
 
 export default {
   data() {
@@ -51,17 +51,11 @@ export default {
   },
   computed: {
     spearGuns() {
-      if (this.type) {
-        return this.$store.state.spearguns.all.filter(
-          speargun => speargun.type.toUpperCase() === this.type.toUpperCase()
-        );
-      } else {
-        return this.$store.state.spearguns.all;
-      }
+      return this.$store.state.spearguns.type;
     }
   },
   components: {
-    SpeargunList
+    SpeargunType
   }
 };
 </script>
