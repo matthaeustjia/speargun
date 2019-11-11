@@ -9,7 +9,7 @@
           <span class="mx-2">/</span>
         </li>
         <li>
-          <nuxt-link to="/speargun" class="text-blue font-bold">Speargun</nuxt-link>
+          <nuxt-link to="/spearguns" class="text-blue font-bold">Spearguns</nuxt-link>
         </li>
         <li>
           <span class="mx-2">/</span>

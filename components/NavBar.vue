@@ -27,7 +27,7 @@
         <div>
           <nuxt-link
             v-on:click.native="toggle"
-            to="/speargun"
+            to="/spearguns"
             class="block mt-4 lg:inline-block lg:mt-0 mr-4"
           >Spearguns</nuxt-link>
           <nuxt-link

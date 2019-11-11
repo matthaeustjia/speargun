@@ -9,7 +9,7 @@
           <span class="mx-2">/</span>
         </li>
         <li>
-          <nuxt-link to="/speargun" class="font-bold">Speargun</nuxt-link>
+          <nuxt-link to="/spearguns" class="font-bold">Spearguns</nuxt-link>
         </li>
         <li v-if="type">
           <span class="mx-2">/</span>
