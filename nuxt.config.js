@@ -9,22 +9,22 @@ export default {
   },
   sitemap: {
     routes: [
-      'speargun/',
-      'speargun/euro',
-      'speargun/singleroller',
-      'speargun/doubleroller',
-      'speargun/invertedroller',
-      'speargun/bluewater',
+      'spearguns/',
+      'spearguns/euro',
+      'spearguns/singleroller',
+      'spearguns/doubleroller',
+      'spearguns/invertedroller',
+      'spearguns/bluewater',
     ]
   },
   generate: {
     routes: [
-      'speargun/',
-      'speargun/euro',
-      'speargun/singleroller',
-      'speargun/doubleroller',
-      'speargun/invertedroller',
-      'speargun/bluewater',
+      'spearguns/',
+      'spearguns/euro',
+      'spearguns/singleroller',
+      'spearguns/doubleroller',
+      'spearguns/invertedroller',
+      'spearguns/bluewater',
     ]
   },
   head: {
