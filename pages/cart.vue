@@ -7,7 +7,7 @@
       <div class="border my-3 p-3" v-for="cart, index in cartList">
         <div class="flex flex-row flex-wrap justify-center">
           <div class="w-full md:w-1/3 flex justify-center">
-            <img class="w-1/3 md:w-1/2 h-32" :src="cart.images[0]" alt />
+            <img class="w-1/2 h-32" :src="cart.images[0]" alt />
           </div>
           <div class="flex w-full md:w-2/3 justify-around">
             <div class="flex flex-col w-1/4">
@@ -24,7 +24,7 @@
             </div>
             <div class="flex flex-col w-1/4">
               <h2 class="text-xs">Quantity</h2>
-              <div>
+              <div class="flex flex-col">
                 <div class="flex">
                   <button
                     @click="substractQuantity(index)"
@@ -36,10 +36,12 @@
                     class="w-4 md:w-5 border bg-transparent font-bold"
                   >+</button>
                 </div>
-                <button
-                  @click="removeItemFromCart(index)"
-                  class="bg-transparent text-red-600 text-center text-xs"
-                >Remove</button>
+                <div class="flex text-center mt-2">
+                  <button
+                    @click="removeItemFromCart(index)"
+                    class="bg-transparent text-red-600 text-center text-xs"
+                  >Remove</button>
+                </div>
               </div>
             </div>
             <div class="flex flex-col w-1/4 text-right">

@@ -122,7 +122,7 @@ export const state = () => ({
           stock: '1',
         },
       ],
-      images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
+      images: ["/img/speargun/2.gif", "/img/speargun/1.gif", "/img/speargun/1.jpg"],
       desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
         "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance.",
         "bla bla bla",
