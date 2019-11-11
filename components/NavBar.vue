@@ -1,7 +1,7 @@
 <template>
   <div class="uppercase font-sans antialiased" id="app">
     <nav
-      class="text-coffee flex-wrap flex lg:flex-col items-center justify-between px-6 py-2 lg:pb-10"
+      class="text-coffee flex-wrap flex lg:flex-col items-center justify-between px-6 py-2 lg:pt-10 lg:pb-5"
     >
       <div class="flex items-center flex-shrink-0 mr-6 lg:pb-10">
         <nuxt-link to="/">

@@ -45,8 +45,9 @@ export const state = () => ({
       ],
       images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
       desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
-        "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance.",
-        "bla bla bla",
+        "Our spearguns are made with 7 vertically laminated ironwood, teak and rosewood",
+        "In it's core we use ironwood as it's the densest type of wood and will not bend and always stays straight. We use teak and rosewood ot the sides to balances out the speargun in the water",
+        "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance."
 
       ],
       features: {

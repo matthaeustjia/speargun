@@ -6,10 +6,10 @@
     <div v-if="cartList.length > 0">
       <div class="border my-3 p-3" v-for="cart, index in cartList">
         <div class="flex flex-row flex-wrap justify-center">
-          <div class="w-1/3 flex justify-center">
-            <img class="w-full md:w-1/2 h-32" :src="cart.images[0]" alt />
+          <div class="w-full md:w-1/3 flex justify-center">
+            <img class="w-1/3 md:w-1/2 h-32" :src="cart.images[0]" alt />
           </div>
-          <div class="flex w-2/3 justify-around">
+          <div class="flex w-full md:w-2/3 justify-around">
             <div class="flex flex-col w-1/4">
               <h2 class="text-xs">Product</h2>
               <div class="flex">
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-full text-right font-semibold">
+      <div class="flex flex-col w-full text-right font-semibold my-5">
         <h1>Grand Total</h1>
         <h1 class="text-md md:text-xl">${{grandTotal}}</h1>
       </div>
