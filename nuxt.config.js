@@ -11,22 +11,20 @@ export default {
     routes: [
       'speargun/',
       'speargun/euro',
-      'speargun/teak',
-      'speargun/product/euro_80',
-      'speargun/product/euro_100',
-      'speargun/product/euro_110',
-      'speargun/product/teak_100'
+      'speargun/singleroller',
+      'speargun/doubleroller',
+      'speargun/invertedroller',
+      'speargun/bluewater',
     ]
   },
   generate: {
     routes: [
       'speargun/',
       'speargun/euro',
-      'speargun/teak',
-      'speargun/product/euro_80',
-      'speargun/product/euro_100',
-      'speargun/product/euro_110',
-      'speargun/product/teak_100'
+      'speargun/singleroller',
+      'speargun/doubleroller',
+      'speargun/invertedroller',
+      'speargun/bluewater',
     ]
   },
   head: {
