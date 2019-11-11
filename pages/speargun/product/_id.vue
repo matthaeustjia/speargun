@@ -82,16 +82,16 @@
               <li v-for="features in spearGun.features">{{features}}</li>
             </ul>
           </div>
-          <div class="w-full flex justify-center">
+          <div v-if="currentLength == null" class="w-full flex justify-center">
             <button
               disabled
-              v-if="currentLength == null"
               class="rounded-lg w-full bg-gray-600 hover:bg-gray-800 uppercase text-xl tracking-tightest text-white font-bold py-2 px-2 rounded-sm"
             >Select an option</button>
+          </div>
+          <div v-else class="stickToBottom w-full flex justify-center">
             <button
-              v-else
               @click="addToCart(currentSpeargun, spearGun.images)"
-              class="rounded-lg w-full bg-orange-600 hover:bg-orange-800 uppercase text-xl tracking-tightest text-white font-bold py-2 px-2 rounded-sm"
+              class="md:rounded-lg w-full bg-orange-600 hover:bg-orange-800 uppercase text-xl tracking-tightest text-white font-bold py-2 px-2 rounded-sm"
             >Add to cart</button>
           </div>
         </div>
@@ -213,5 +213,12 @@ img {
 .radio-toolbar input[type="radio"]:checked + label {
   background-color: #bfb;
   border-color: #4c4;
+}
+@media only screen and (max-width: 600px) {
+  .stickToBottom {
+    position: fixed;
+    margin-left: -1.25em;
+    bottom: 0px;
+  }
 }
 </style>
