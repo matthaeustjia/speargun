@@ -10,21 +10,21 @@ export default {
   sitemap: {
     routes: [
       'spearguns/',
-      'spearguns/euro',
-      'spearguns/singleroller',
-      'spearguns/doubleroller',
-      'spearguns/invertedroller',
-      'spearguns/bluewater',
+      'spearguns/product/euro',
+      'spearguns/product/singleroller',
+      'spearguns/product/doubleroller',
+      'spearguns/product/invertedroller',
+      'spearguns/product/bluewater',
     ]
   },
   generate: {
     routes: [
       'spearguns/',
-      'spearguns/euro',
-      'spearguns/singleroller',
-      'spearguns/doubleroller',
-      'spearguns/invertedroller',
-      'spearguns/bluewater',
+      'spearguns/product/euro',
+      'spearguns/product/singleroller',
+      'spearguns/product/doubleroller',
+      'spearguns/product/invertedroller',
+      'spearguns/product/bluewater',
     ]
   },
   head: {
