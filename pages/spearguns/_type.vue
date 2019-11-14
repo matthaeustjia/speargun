@@ -38,13 +38,15 @@ export default {
   },
   head() {
     return {
-      title: "Bajoo Wooden Speargun",
+      title: "Spearguns List",
+      titleTemplate: "%s - Bajoo Wooden Speargun",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: "description",
           name: "description",
-          content: "High quality euro wooden speargun. teak wooden speargun"
+          content:
+            "Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. Our spearguns are made with 7 vertically laminated ironwood, teak and rosewood"
         }
       ]
     };
