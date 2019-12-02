@@ -7,7 +7,7 @@ export const state = () => ({
           id: "euro_90",
           barrelLength: "90",
           price: "500",
-          retailPrice: "899",
+          unit_amount: "899",
           stock: '1',
         },
         {
@@ -15,7 +15,7 @@ export const state = () => ({
           name: "Euro 100",
           barrelLength: "100",
           price: "550",
-          retailPrice: "999",
+          unit_amount: "999",
           stock: '1',
         },
         {
@@ -23,7 +23,7 @@ export const state = () => ({
           name: "Euro 110",
           barrelLength: "110",
           price: "600",
-          retailPrice: "999",
+          unit_amount: "999",
           stock: '1'
         },
         {
@@ -31,7 +31,7 @@ export const state = () => ({
           name: "Euro 120",
           barrelLength: "120",
           price: "650",
-          retailPrice: "999",
+          unit_amount: "999",
           stock: '1'
         },
         {
@@ -39,18 +39,22 @@ export const state = () => ({
           name: "Euro 140",
           barrelLength: "140",
           price: "700",
-          retailPrice: "999",
+          unit_amount: "999",
           stock: '1'
         }
       ],
       images: ["/img/speargun/3.jpg", "/img/speargun/1.gif", "/img/speargun/2.gif"],
-      desc: ["Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
+      desc: ["Bajoo euro speargun combines the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. ",
         "Our spearguns are made with 7 vertically laminated ironwood, teak and rosewood",
         "In it's core we use ironwood as it's the densest type of wood and will not bend and always stays straight. We use teak and rosewood ot the sides to balances out the speargun in the water",
         "Slim, sleek and weight ballasted this speragun is sure to set the bar in performance."
 
       ],
       features: {
+        etc1: 'Bajo euro is complete and oufitted to take down anything in its reach',
+        etc2: 'Slim, sleek and weight ballasted. Cuttlefish design',
+        etc3: 'Wood finish is deep and rich, pressure infused, multistate for ultimate wood sealing and durability',
+        etc4: 'Impressive wide and comfortable fully molded rubber butt with textured surface for grip and comfort.',
         materials: "7 vertical laminated wood with ironwood as its core with a touch of rosewood and teak.",
         shaftSize: "Comes with rob allen 7mm shaft. Accepting up to (8mm) diameter spearshaft.",
         rubbers: "2x16mm rubber. Can be replaced with 3x14mm rubber",
@@ -67,7 +71,7 @@ export const state = () => ({
           id: "bluewater_160",
           barrelLength: "160",
           price: "1100",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
         {
@@ -75,7 +79,7 @@ export const state = () => ({
           name: "Bluewater 170",
           barrelLength: "170",
           price: "1200",
-          retailPrice: "2000",
+          unit_amount: "2000",
           stock: '1',
         },
 
@@ -102,7 +106,7 @@ export const state = () => ({
           id: "singleroller_90",
           barrelLength: "90",
           price: "800",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
         {
@@ -110,7 +114,7 @@ export const state = () => ({
           id: "singleroller_100",
           barrelLength: "100",
           price: "850",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
         {
@@ -118,7 +122,7 @@ export const state = () => ({
           id: "singleroller_110",
           barrelLength: "110",
           price: "900",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
       ],
@@ -144,7 +148,7 @@ export const state = () => ({
           id: "doubleroller_90",
           barrelLength: "90",
           price: "1000",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
         {
@@ -152,7 +156,7 @@ export const state = () => ({
           id: "doubleroller_100",
           barrelLength: "100",
           price: "1050",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
         {
@@ -160,7 +164,7 @@ export const state = () => ({
           id: "doubleroller_110",
           barrelLength: "110",
           price: "1100",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
       ],
@@ -186,7 +190,7 @@ export const state = () => ({
           id: "singleroller_90",
           barrelLength: "90",
           price: "800",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
         {
@@ -194,7 +198,7 @@ export const state = () => ({
           id: "singleroller_100",
           barrelLength: "100",
           price: "800",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
         {
@@ -202,7 +206,7 @@ export const state = () => ({
           id: "singleroller_110",
           barrelLength: "110",
           price: "800",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
       ],
@@ -229,7 +233,7 @@ export const state = () => ({
           id: "invertedroller_90",
           barrelLength: "90",
           price: "1000",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
         {
@@ -237,7 +241,7 @@ export const state = () => ({
           id: "invertedroller_100",
           barrelLength: "100",
           price: "1050",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
         {
@@ -245,7 +249,7 @@ export const state = () => ({
           id: "invertedroller_110",
           barrelLength: "110",
           price: "1100",
-          retailPrice: "1800",
+          unit_amount: "1800",
           stock: '1',
         },
       ],

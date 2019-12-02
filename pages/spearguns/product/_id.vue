@@ -148,7 +148,6 @@ export default {
   },
   methods: {
     addToCart(product, images) {
-      console.log(images);
       this.$store.commit(
         "cart/pushProductToCart",
         Object.assign(product, { images })

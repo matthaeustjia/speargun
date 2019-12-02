@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="w-full flex flex-wrap">
-            <div class="w-1/2 px-3">
+            <div class="w-full md:w-1/2 px-3">
               <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="phone"
@@ -49,7 +49,7 @@
                 required
               />
             </div>
-            <div class="w-1/2 px-3">
+            <div class="w-full md:w-1/2 px-3">
               <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="email"

@@ -28,22 +28,22 @@
           <nuxt-link
             v-on:click.native="toggle"
             to="/spearguns"
-            class="block mt-4 lg:inline-block lg:mt-0 mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-8"
           >Spearguns</nuxt-link>
           <nuxt-link
             v-on:click.native="toggle"
             to="/contact"
-            class="block mt-4 lg:inline-block lg:mt-0 mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-8"
           >Contact US</nuxt-link>
           <nuxt-link
             v-on:click.native="toggle"
             to="/gallery"
-            class="block mt-4 lg:inline-block lg:mt-0 mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-8"
           >Gallery</nuxt-link>
           <nuxt-link
             v-on:click.native="toggle"
             to="/cart"
-            class="block mt-4 lg:inline-block lg:mt-0 mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-8"
           >
             Cart
             <sup v-if="totalItems > 0">({{totalItems}})</sup>
