@@ -79,7 +79,7 @@ export default {
 
     },
     {
-      src: '~/plugins/vue-gallery.js',
+      src: '~/plugins/vue-gallery.client.js',
       mode: 'client'
     }
   ],
