@@ -29,7 +29,12 @@
           />
         </div>
         <client-only>
-          <LightGallery :images=" images" :index="imageIndex" @close="imageIndex = null" />
+          <LightGallery
+            :images=" images"
+            :alt="currentSpeargun.name + 1"
+            :index="imageIndex"
+            @close="imageIndex = null"
+          />
         </client-only>
         <div class="w-full flex flex-row flex-wrap">
           <img
@@ -38,6 +43,7 @@
             :key="image.src"
             class="thumbnail"
             :src="image"
+            :alt="currentSpeargun.name + 1"
           />
         </div>
       </div>
