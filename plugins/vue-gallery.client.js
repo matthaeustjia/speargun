@@ -1,4 +1,4 @@
-import Vue from 'vue'
-import VueGallery from 'vue-gallery'
+import Vue from 'vue';
+import LightGallery from 'vue-light-gallery';
 
-Vue.component('VueGallery', VueGallery)
+Vue.use(LightGallery);

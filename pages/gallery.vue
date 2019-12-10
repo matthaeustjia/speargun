@@ -5,7 +5,7 @@
     </div>
     <div>
       <client-only>
-        <VueGallery :images="images" :index="index" @close="index = null"></VueGallery>
+        <LightGallery :images="images" :index="index" :disable-scroll="true" @close="index = null" />
       </client-only>
       <div
         class="image"
