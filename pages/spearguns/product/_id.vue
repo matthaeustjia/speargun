@@ -28,7 +28,9 @@
             :src="currentImage"
           />
         </div>
-        <VueGallery :images=" images" :index="imageIndex" @close="imageIndex = null"></VueGallery>
+        <client-only>
+          <LightGallery :images=" images" :index="imageIndex" @close="imageIndex = null" />
+        </client-only>
         <div class="w-full flex flex-row flex-wrap">
           <img
             @click="currentIndex = index"
