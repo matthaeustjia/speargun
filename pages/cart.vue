@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto container flex flex-col items-center">
+  <div class="mx-auto container flex flex-col items-center p-3">
     <div class="uppercase text-2xl md:text-4xl tracking-tighter text-black mb-5">
       <h1>Shopping Cart</h1>
     </div>
