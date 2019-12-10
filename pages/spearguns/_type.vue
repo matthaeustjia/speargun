@@ -48,8 +48,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content:
-            "Manufacturer of handmade high quality wooden spearguns.Heavy duty, powerful and built to last speargun."
+          content: "List of our high quality wooden spearguns."
         }
       ]
     };

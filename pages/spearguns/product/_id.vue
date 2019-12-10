@@ -122,7 +122,7 @@ export default {
   },
   head() {
     return {
-      title: "Bajoo " + this.spearGun.name,
+      title: "Bajoo " + this.spearGun.name + " Speargun",
       titleTemplate: "%s - Bajoo Wooden Speargun",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work

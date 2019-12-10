@@ -117,7 +117,8 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Contact bajoo wooden speargun"
+          content:
+            "Contact us. All the information you need to get in touch regarding our speargun. For general enquiries the best place to start is to email info@woodenspeargun.com.au. One of our Supporter Care team will follow up with you to help find out what you need and who can help."
         }
       ]
     };
