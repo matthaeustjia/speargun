@@ -1,19 +1,17 @@
 <template>
   <div class="flex flex-col items-center h-screen w-full">
-    <div class="flex flex-col items-center justify-center content-center">
-      <div class="cover-img w-full">
-        <img class="cover" src="~/assets/img/cover.jpg" alt="cover" />
-        <div
-          class="cover-text flex flex-col w-full justify-center text-center items-center tracking-widest"
-        >
-          <h1 class="w-full text-2xl md:text-4xl text-white uppercase">CONTACT US</h1>
-          <h3 class="container text-xs md:text-sm text-white">
-            Thank you for visiting our website. We'd love to hear your comments, so please take a moment to provide the information below. For further assistance you may also call us at
-            <a
-              href="tel:0421843213"
-            >0421 843 213</a> , Monday through Friday from 8-5 PST and Saturday from 9-3 PST.
-          </h3>
-        </div>
+    <div class="cover-img w-full">
+      <img class="cover" src="~/assets/img/cover.jpg" alt="Image Cover" />
+      <div
+        class="cover-text flex flex-col w-full justify-center text-center items-center tracking-widest"
+      >
+        <h1 class="w-full text-2xl md:text-4xl text-white uppercase">CONTACT US</h1>
+        <h3 class="container text-xs md:text-sm text-white">
+          Thank you for visiting our website. We'd love to hear your comments, so please take a moment to provide the information below. For further assistance you may also call us at
+          <a
+            href="tel:0421843213"
+          >0421 843 213</a> , Monday through Friday from 8-5 PST and Saturday from 9-3 PST.
+        </h3>
       </div>
     </div>
     <div class="container flex flex-wrap bg-white">
