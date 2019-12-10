@@ -34,7 +34,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Manufacturer handmade high quality wooden spearguns for sale. Best wooden speargun australia"
+            "Manufacturer of handmade high quality wooden spearguns.Heavy duty, powerful and built to last speargun."
         }
       ]
     };
