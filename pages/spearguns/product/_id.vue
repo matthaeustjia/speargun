@@ -26,12 +26,13 @@
             @click="imageIndex = currentIndex"
             class="main-image h-180 border"
             :src="currentImage"
+            :alt="currentSpeargun.name"
           />
         </div>
         <client-only>
           <LightGallery
             :images=" images"
-            :alt="currentSpeargun.name + 1"
+            :alt="currentSpeargun.name"
             :index="imageIndex"
             @close="imageIndex = null"
           />
@@ -43,7 +44,7 @@
             :key="image.src"
             class="thumbnail"
             :src="image"
-            :alt="currentSpeargun.name + 1"
+            :alt="currentSpeargun.name + ' ' +index"
           />
         </div>
       </div>
@@ -77,14 +78,14 @@
             </div>
           </div>
           <div class="w-full mb-2 flex justify-around text-lg">
-            <h1 class="font-semibold options">Description</h1>
+            <h3 class="font-semibold options">Description</h3>
           </div>
           <div>
             <p v-for="desc in spearGun.desc" class="text-xs lg:text-sm mb-2">{{desc}}</p>
           </div>
           <div>
             <div class="w-full mb-2 flex justify-around text-lg">
-              <h1 class="font-semibold options">{{currentSpeargun.name}} Features</h1>
+              <h3 class="font-semibold options">{{currentSpeargun.name}} Features</h3>
             </div>
             <ul class="text-xs lg:text-sm list-disc mb-5">
               <li v-for="features in spearGun.features">{{features}}</li>

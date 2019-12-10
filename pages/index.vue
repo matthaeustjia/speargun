@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-center content-center">
     <div class="cover-img w-full">
-      <img class="cover" src="~/assets/img/cover.jpg" alt="cover" />
+      <img class="cover" src="~/assets/img/cover.jpg" alt="Image Cover" />
       <div class="cover-text flex w-full justify-center text-center items-center tracking-widest">
         <h1 class="w-full text-xl md:text-3xl text-white uppercase">Bajoo Wooden Speargun</h1>
       </div>
