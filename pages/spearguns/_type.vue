@@ -17,6 +17,9 @@
         <li v-if="type">{{spearGuns[0].type}}</li>
       </ol>
     </nav>
+    <div>
+      <h1 class="font-semibold tracking-wide text-3xl">Speargun List</h1>
+    </div>
     <div class="container flex flex-row flex-wrap">
       <SpeargunType
         :speargunType="speargunType"
@@ -46,7 +49,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Bajoo euro speargun combies the great features and advantages of wooden speargun without breaking the bank. It designed to take down anything in its reach. Our spearguns are made with 7 vertically laminated ironwood, teak and rosewood"
+            "Manufacturer of handmade high quality wooden spearguns.Heavy duty, powerful and built to last speargun."
         }
       ]
     };
