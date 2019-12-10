@@ -3,7 +3,7 @@
     <div class="uppercase text-2xl md:text-4xl tracking-tighter text-black mb-5">
       <h1>GALLERY</h1>
     </div>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col md:flex-row items-center">
       <client-only>
         <LightGallery :images="images" :index="index" :disable-scroll="true" @close="index = null" />
       </client-only>
