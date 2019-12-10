@@ -2,7 +2,7 @@
   <div class="h-320 p-5 w-full sm:w-1/2 lg:w-1/3">
     <nuxt-link :to="'/spearguns/product/' + speargunType.type">
       <div class="flex flex-col items-center justify-around h-full">
-        <img class="h-180" :src="speargunType.img" />
+        <img class="h-180" :alt="speargun.name" :src="speargunType.img" />
         <div class="flex flex-col items-center text-lg">{{speargunType.name}}</div>
       </div>
     </nuxt-link>
