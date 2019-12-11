@@ -13,7 +13,6 @@ export default {
       'spearguns/product/euro',
       'spearguns/product/singleroller',
       'spearguns/product/doubleroller',
-      'spearguns/product/invertedroller',
       'spearguns/product/bluewater',
     ]
   },
@@ -23,7 +22,6 @@ export default {
       'spearguns/product/euro',
       'spearguns/product/singleroller',
       'spearguns/product/doubleroller',
-      'spearguns/product/invertedroller',
       'spearguns/product/bluewater',
     ]
   },
