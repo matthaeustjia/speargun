@@ -44,7 +44,7 @@
             :key="image.src"
             class="thumbnail"
             :src="image"
-            :alt="currentSpeargun.name + ' ' +index"
+            :alt="currentSpeargun.name + ' ' +index+1"
           />
         </div>
       </div>
@@ -129,7 +129,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.spearGun.desc
+          content: this.spearGun.desc.substring(0, 150)
         }
       ]
     };
