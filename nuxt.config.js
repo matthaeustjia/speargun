@@ -5,7 +5,7 @@ export default {
    */
   server: {
     port: 8080,
-    host: '192.168.1.102'
+    host: '127.0.0.1'
   },
   sitemap: {
     routes: [

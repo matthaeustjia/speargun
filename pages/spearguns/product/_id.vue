@@ -129,7 +129,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.spearGun.desc.substring(0, 150)
+          content: String(this.spearGun.desc).substring(0, 150)
         }
       ]
     };
