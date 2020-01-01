@@ -6,12 +6,12 @@
         class="cover-text flex flex-col w-full justify-center text-center items-center tracking-widest"
       >
         <h1 class="w-full text-2xl md:text-4xl text-white uppercase">CONTACT US</h1>
-        <h2 class="container text-xs md:text-sm text-white">
+        <p class="container text-xs md:text-sm text-white">
           Thank you for visiting our website. We'd love to hear your comments, so please take a moment to provide the information below. For further assistance you may also call us at
           <a
             href="tel:0421843213"
           >0421 843 213</a> , Monday through Friday from 8-5 PST and Saturday from 9-3 PST.
-        </h2>
+        </p>
       </div>
     </div>
     <div class="container flex flex-wrap bg-white">

@@ -247,19 +247,22 @@ export const state = () => ({
   type: [{
     name: "Euro",
     type: "euro",
+    price: "$500+",
     img: "/img/speargun/1.gif"
   }, {
     name: "Single Roller",
     type: "singleroller",
+    price: "$800+",
     img: "/img/speargun/1.gif"
   }, {
     name: "Double roller",
     type: "doubleroller",
+    price: "$1000+",
     img: "/img/speargun/1.gif"
   }, {
     name: "Bluewater",
     type: "bluewater",
-
+    price: "$1100+",
     img: "/img/speargun/1.gif"
   }]
 })
