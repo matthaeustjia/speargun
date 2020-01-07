@@ -72,6 +72,10 @@ export default {
       mode: 'server'
     },
     {
+      src: '~plugins/ga.js',
+      mode: 'client'
+    },
+    {
       src: '~/plugins/notifications-client',
       mode: 'client',
 

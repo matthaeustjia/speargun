@@ -50,7 +50,7 @@
       </div>
       <div class="w-full md:w-1/2 px-5 mb-5 flex flex-col">
         <div class="text-2xl text-center flex flex-col font-semibold">
-          <h1 class="text-lg tracking-tight font-semibold">Bajoo</h1>
+          <h2 class="text-lg tracking-tight font-semibold">Bajoo</h2>
           <h1 class="font-bold">{{currentSpeargun.name}}</h1>
         </div>
         <div class="w-full flex text-center items-center justify-center mb-5">

@@ -53,7 +53,9 @@
       </div>
       <div class="flex flex-col w-full text-right font-semibold my-5">
         <h1>Grand Total</h1>
-        <h1 class="text-md md:text-xl">${{grandTotal}}</h1>
+        <h1
+          class="text-md md:text-xl"
+        >${{grandTotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}}</h1>
       </div>
       <div class="flex justify-center text-center font-semibold">
         <Paypal />
