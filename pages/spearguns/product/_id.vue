@@ -9,17 +9,21 @@
           <span class="mx-2">/</span>
         </li>
         <li>
-          <nuxt-link to="/spearguns" class="text-blue font-bold">Spearguns</nuxt-link>
+          <nuxt-link to="/spearguns" class="text-blue font-bold"
+            >Spearguns</nuxt-link
+          >
         </li>
         <li>
           <span class="mx-2">/</span>
         </li>
         <li>
-          <span>{{spearGun.name}}</span>
+          <span>{{ spearGun.name }}</span>
         </li>
       </ol>
     </nav>
-    <div class="container flex flex-col md:flex-row justify-around flex-wrap w-full">
+    <div
+      class="container flex flex-col md:flex-row justify-around flex-wrap w-full"
+    >
       <div class="w-full md:w-1/2 p-5">
         <div class="w-full">
           <img
@@ -31,7 +35,7 @@
         </div>
         <client-only>
           <LightGallery
-            :images=" images"
+            :images="images"
             :alt="currentSpeargun.name"
             :index="imageIndex"
             @close="imageIndex = null"
@@ -40,27 +44,27 @@
         <div class="w-full flex flex-row flex-wrap">
           <img
             @click="currentIndex = index"
-            v-for="image,index in images"
+            v-for="(image, index) in images"
             :key="image.src"
             class="thumbnail"
             :src="image"
-            :alt="currentSpeargun.name + ' ' +index+1"
+            :alt="currentSpeargun.name + ' ' + index + 1"
           />
         </div>
       </div>
       <div class="w-full md:w-1/2 px-5 mb-5 flex flex-col">
         <div class="text-2xl text-center flex flex-col font-semibold">
           <h2 class="text-lg tracking-tight font-semibold">Bajoo</h2>
-          <h1 class="font-bold">{{currentSpeargun.name}}</h1>
+          <h1 class="font-bold">{{ currentSpeargun.name }}</h1>
         </div>
         <div class="w-full flex text-center items-center justify-center mb-5">
           <s class="text-red-600 mr-5">
             RRP
-            <h2>${{currentSpeargun.retailPrice}}</h2>
+            <h2>${{ currentSpeargun.retailAmount }}</h2>
           </s>
           <span class="text-blue-800">
             Our Price
-            <h2>${{currentSpeargun.price}}</h2>
+            <h2>${{ currentSpeargun.unit_amount }}</h2>
           </span>
         </div>
         <div class="flex flex-col justify-between">
@@ -73,7 +77,9 @@
                   type="radio"
                   :value="speargunLength.id"
                 />
-                <label :for="speargunLength.barrelLength">{{speargunLength.barrelLength}}</label>
+                <label :for="speargunLength.barrelLength">{{
+                  speargunLength.barrelLength
+                }}</label>
               </span>
             </div>
           </div>
@@ -81,27 +87,35 @@
             <h3 class="font-semibold options">Description</h3>
           </div>
           <div>
-            <p v-for="desc in spearGun.desc" class="text-xs lg:text-sm mb-2">{{desc}}</p>
+            <p v-for="desc in spearGun.desc" class="text-xs lg:text-sm mb-2">
+              {{ desc }}
+            </p>
           </div>
           <div>
             <div class="w-full mb-2 flex justify-around text-lg">
-              <h3 class="font-semibold options">{{currentSpeargun.name}} Features</h3>
+              <h3 class="font-semibold options">
+                {{ currentSpeargun.name }} Features
+              </h3>
             </div>
             <ul class="text-xs lg:text-sm list-disc mb-5">
-              <li v-for="features in spearGun.features">{{features}}</li>
+              <li v-for="features in spearGun.features">{{ features }}</li>
             </ul>
           </div>
           <div v-if="currentLength == null" class="w-full flex justify-center">
             <button
               disabled
               class="rounded-lg w-full bg-gray-600 hover:bg-gray-800 uppercase text-xl tracking-tightest text-white font-bold py-2 px-2 rounded-sm"
-            >Select an option</button>
+            >
+              Select an option
+            </button>
           </div>
           <div v-else class="stickToBottom w-full flex justify-center">
             <button
               @click="addToCart(currentSpeargun, spearGun.images)"
               class="md:rounded-lg w-full bg-orange-600 hover:bg-orange-800 uppercase text-xl tracking-tightest text-white font-bold py-2 px-2 rounded-sm"
-            >Add to cart</button>
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>

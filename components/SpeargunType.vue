@@ -3,8 +3,8 @@
     <nuxt-link :to="'/spearguns/product/' + speargunType.type">
       <div class="flex flex-col items-center justify-around h-full">
         <img class="h-180" :alt="speargunType.name" :src="speargunType.img" />
-        <h2 class="text-xl">{{speargunType.name}}</h2>
-        <h3 class="text-sm text-gray-700">{{speargunType.price}}</h3>
+        <h2 class="text-xl">{{ speargunType.name }}</h2>
+        <h3 class="text-sm text-gray-700">{{ speargunType.unit_amount }}</h3>
       </div>
     </nuxt-link>
   </div>
