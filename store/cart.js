@@ -10,7 +10,7 @@ export const getters = {
     let grandTotal = 0;
     for (let i = 0; i < state.cartList.length; i++) {
       grandTotal =
-        grandTotal + state.cartList[i].price * state.cartList[i].quantity;
+        grandTotal + state.cartList[i].unit_amount * state.cartList[i].quantity;
     }
     return grandTotal;
   }

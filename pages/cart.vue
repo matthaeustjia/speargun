@@ -102,7 +102,7 @@ export default {
     },
     productTotal(index) {
       let productTotal =
-        this.cartList[index].quantity * this.cartList[index].price;
+        this.cartList[index].quantity * this.cartList[index].unit_amount;
       return productTotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
     },
 
